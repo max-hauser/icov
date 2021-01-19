@@ -172,6 +172,15 @@ export default {
     width: 24px;
   }
 
+ ul.selectie {
+    background-color: #fff;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid;
+    text-align: left;
+} 
+
   section{
     background-color: #fff;
     height: 100vh;
