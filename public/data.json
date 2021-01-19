@@ -1,0 +1,68 @@
+[{
+  "_ID": "100",
+  "_DATE_OF_BIRTH": "08/04/1955",
+  "_SEX": "MALE",
+  "_LABEL": "Steven King",
+  "_DEPARTMENT_ID": "90",
+  "_BSN": "234098123238",
+  "_NUMBER_OF_STAFF": "14",
+  "iCOV_node_id": "2458292",
+  "iCOV_node_type": "PEOPLE",
+  "iCOV_node_subtype": "MANAGER",
+  "iCOV_node_or_flag": "NODE",
+  "iCOV_node_key": "100Steven King",
+  "_Family": [
+    {"gezinsgrootte": 4,
+    "burgelijke status": "getrouwd",
+    "relatie geschiedenis": ["persoon 1", "persoon 2"],
+    "partner": {"naam": "Janette king",
+    "geboortedatum": "04-06-1965"},
+    "kinderen": [
+      {"naam": "Tom King", "geboortedatum": "02-09-1995", "bsn": 2340293420394},
+      {"naam": "Ella King", "geboortedatum": "08-03-1999", "bsn": 2340242342320}
+    ]}],
+  "_Acquaintances": ["Jessie Davidson", "Shelly Simmonds", "Corey Price", "Arbaaz Estrada"],
+  "_POSSESSIONS": [
+    {"entiteit": "voertuig", "type": "auto", "merk": "Mercedes", "model": "G 63", "Aanschafdatum": "18-02-2017", "aantal bekeuringen": 2, "kenteken": "f-523-ah", "waarde": "50000", "actief": true},
+    {"entiteit": "voertuig", "type": "auto", "merk": "Audi", "model": "A4", "Aanschafdatum": "03-05-2016", "aantal bekeuringen": 6, "kenteken": "g-001-bb", "waarde": "30000", "actief": false},
+    {"entiteit": "voertuig", "type": "auto", "merk": "Opel", "model": "Astra", "Aanschafdatum": "24-06-2012", "aantal bekeuringen": 3, "kenteken": "b-238-rr", "waarde": "15000", "actief": false},
+    {"entiteit": "woonplaats", "type":"huis",  "waarde": "200000", "aanschaf datum": "15-03-2019", "actief": true},
+    {"entiteit": "woonplaats", "type":"appartement",  "waarde": "120000", "aanschaf datum": "06-07-2010", "actief": false}
+  ],
+  "_FINANCES": [
+    {"eniteit": "salaris", "jaarinkomen": "120000", "markt salaris": "100000", "bonus percentage": "10%"},
+    {"entiteit": "schulden", "schuldGrootte": 30000}],
+    "_ADDRESS": [{"entiteit": "woning", "straat": "G.P. Duuringlaan 7", "postcode": "7339 BR", "plaats": "Ugchelen"}, {"entiteit":"werk", "straat": "G.P. Duuringlaan 7", "postcode": "7339 BR", "plaats": "Leiden"}]
+
+},
+{
+"_ID": "101",
+"_DATE_OF_BIRTH": "08/04/1955",
+"_SEX": "FEMALE",
+"_LABEL": "Beth Johnson",
+"_DEPARTMENT_ID": "90",
+"_BSN": "09834598712",
+"_NUMBER_OF_STAFF": "14",
+"iCOV_node_id": "2458292",
+"iCOV_node_type": "PEOPLE",
+"iCOV_node_subtype": "MANAGER",
+"iCOV_node_or_flag": "NODE",
+"iCOV_node_key": "100Steven Johnson",
+"_Family": [
+  {"gezinsgrootte": 4,
+  "burgelijke status": "getrouwd",
+  "relatie geschiedenis": ["persoon 1", "persoon 2"],
+  "partner": {"naam": "Lee Schaffer",
+  "geboortedatum": "04-06-1965"},
+  "kinderen": [],
+  "_Acquaintances": ["Jessie Davidson", "Shelly Simmonds", "Corey Price", "Arbaaz Estrada"],
+  "_POSSESSIONS": [
+  {"entiteit": "voertuig", "type": "auto", "merk": "Jeep", "model": "compass", "Aanschafdatum": "03-05-2014", "aantal bekeuringen": 1, "kenteken": "h-536-kp", "waarde": "45000"},
+  {"entiteit": "woonplaats", "type":"huis",  "waarde": "150000", "aanschaf datum": "06-07-1995"}
+]}],
+"_FINANCES": [
+  {"eniteit": "salaris", "jaarinkomen": "120000", "markt salaris": "100000", "bonus percentage": "10%"},
+  {"entiteit": "schulden", "schuldGrootte": 30000}],
+"_ADDRESS": [{"entiteit": "woning", "straat": "G.P. Duuringlaan 7", "postcode": "7339 BR", "plaats": "Ugchelen"}, {"entiteit":"werk", "straat": "G.P. Duuringlaan 7", "postcode": "7339 BR", "plaats": "Leiden"}]
+}
+]
