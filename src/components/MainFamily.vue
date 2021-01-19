@@ -37,6 +37,14 @@
 </template>
 
 <script>
+
+
+export default {
+  name: 'HelloWorld',
+  props: {
+    msg: String
+  },
+  data() {
 let user = "";
 let target = "";
 let kids = "";
@@ -46,14 +54,7 @@ if(localStorage.target != null){
  target = user._LABEL;
  kids = user._Family[0]["kinderen"];
  partnerNaam = user._Family[0]["partner"]["naam"];
-}
-
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  },
-  data() {
+}    
     return {
       children: kids,
       partner: partnerNaam,

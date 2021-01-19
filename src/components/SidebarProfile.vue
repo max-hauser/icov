@@ -21,6 +21,13 @@
 </template>
 
 <script>
+
+
+export default {
+  props: {
+    msg: String
+  },
+  data() {
 let user = "";
 let name = "";
 let dob = "";
@@ -30,13 +37,7 @@ if(localStorage.target != null){
  name = user._LABEL;
  dob = user._DATE_OF_BIRTH;
  status = user._Family[0]["burgelijke status"];
-}
-
-export default {
-  props: {
-    msg: String
-  },
-  data() {
+}    
     return {
       naam: name,
       geboortedatum: dob,

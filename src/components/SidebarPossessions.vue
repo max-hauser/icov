@@ -17,12 +17,6 @@
 </template>
 
 <script>
-let user = "";
-let bezittingen = "";
-if(localStorage.target != null){
- user = JSON.parse(localStorage.target);
- bezittingen = user._POSSESSIONS;
-}
 
 export default {
   name: 'HelloWorld',
@@ -30,6 +24,12 @@ export default {
     msg: String
   },
   data() {
+let user = "";
+let bezittingen = "";
+if(localStorage.target != null){
+ user = JSON.parse(localStorage.target);
+ bezittingen = user._POSSESSIONS;
+}    
     return {
       car: 'auto',
       house: 'appartement',

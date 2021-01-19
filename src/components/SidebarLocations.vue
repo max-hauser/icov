@@ -17,12 +17,7 @@
 </template>
 
 <script>
-let user = "";
-let locaties = "";
-if(localStorage.target != null){
- user = JSON.parse(localStorage.target);
- locaties = user._ADDRESS;
-}
+
 
 export default {
   name: 'HelloWorld',
@@ -30,6 +25,12 @@ export default {
     msg: String
   },
   data() {
+let user = "";
+let locaties = "";
+if(localStorage.target != null){
+ user = JSON.parse(localStorage.target);
+ locaties = user._ADDRESS;
+}    
     return {
       home: 'woning',
       work: 'werk',

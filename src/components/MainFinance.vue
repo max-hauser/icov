@@ -47,6 +47,14 @@
 </template>
 
 <script>
+
+
+export default {
+  name: 'HelloWorld',
+  props: {
+    msg: String
+  },
+  data() {
 let user = "";
 let salaris = "";
 let schulden = "";
@@ -57,14 +65,7 @@ if(localStorage.target != null){
  schulden = user._FINANCES[1]["schuldGrootte"];
 functie = user.iCOV_node_subtype;
 }
-functie = functie.toLowerCase();
-
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  },
-  data() {
+functie = functie.toLowerCase();    
     return {
       salary: salaris,
       debt: schulden,

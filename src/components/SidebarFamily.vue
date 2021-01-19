@@ -16,14 +16,7 @@
 </template>
 
 <script>
-let user = "";
-let kids = "";
-let partnerNaam = "";
-if(localStorage.target != null){
-   user = JSON.parse(localStorage.target);
-   kids = user._Family[0]["kinderen"];
-   partnerNaam = user._Family[0]["partner"]["naam"];
-}
+
 
 export default {
   name: 'HelloWorld',
@@ -31,10 +24,22 @@ export default {
     msg: String
   },
   data() {
+  let user = "";
+  let kids = "";
+  let partnerNaam = "";
+  if(localStorage.target != null){
+    user = JSON.parse(localStorage.target);
+    kids = user._Family[0]["kinderen"];
+    partnerNaam = user._Family[0]["partner"]["naam"];
+  }
+
     return {
       children: kids,
       partner: partnerNaam
     }
+  },
+  mounted: function(){
+
   }
 }
 </script>
