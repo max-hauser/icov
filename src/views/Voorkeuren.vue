@@ -128,12 +128,6 @@ export default {
 methods: {
   route: function(){
     this.$router.push('/choosetype');
-  },
-  mounted: function(){
-    if(localStorage.refresh == undefined){
-      localStorage.setItem("refresh", "no");
-      location.reload();
-    }
   }
 }
 }

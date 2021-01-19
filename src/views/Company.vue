@@ -61,7 +61,15 @@ export default {
     steven: function() {
       console.log('test');
     }
-  }
+  },
+  mounted: function(){
+    if(localStorage.refresh_company == undefined){
+      if(location.href.includes("company")){
+        localStorage.setItem("refresh_company", "no");
+        location.reload();
+      }
+    }
+  }   
 }
 </script>
 
