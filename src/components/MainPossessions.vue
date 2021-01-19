@@ -26,9 +26,14 @@
 
 import DumbbellPlot from '@/components/DumbbellPlot.vue'
 
-const user = JSON.parse(localStorage.target);
-const bezittingen = user._POSSESSIONS;
-const status = user._POSSESSIONS["actief"];
+let user = "";
+let bezittingen = "";
+let status = "";
+if(localStorage.target != null){
+ user = JSON.parse(localStorage.target);
+ bezittingen = user._POSSESSIONS;
+ status = user._POSSESSIONS["actief"];
+}
 export default {
   name: 'HelloWorld',
   components: {

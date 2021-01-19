@@ -47,10 +47,16 @@
 </template>
 
 <script>
-const user = JSON.parse(localStorage.target);
-const salaris = (user._FINANCES[0]["jaarinkomen"] / 12) / 3;
-const schulden = user._FINANCES[1]["schuldGrootte"];
-let functie = user.iCOV_node_subtype;
+let user = "";
+let salaris = "";
+let schulden = "";
+let functie = "A";
+if(localStorage.target != null){
+ user = JSON.parse(localStorage.target);
+ salaris = (user._FINANCES[0]["jaarinkomen"] / 12) / 3;
+ schulden = user._FINANCES[1]["schuldGrootte"];
+functie = user.iCOV_node_subtype;
+}
 functie = functie.toLowerCase();
 
 export default {

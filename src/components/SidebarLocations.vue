@@ -17,8 +17,12 @@
 </template>
 
 <script>
-const user = JSON.parse(localStorage.target);
-const locaties = user._ADDRESS;
+let user = "";
+let locaties = "";
+if(localStorage.target != null){
+ user = JSON.parse(localStorage.target);
+ locaties = user._ADDRESS;
+}
 
 export default {
   name: 'HelloWorld',

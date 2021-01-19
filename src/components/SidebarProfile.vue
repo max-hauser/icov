@@ -21,10 +21,16 @@
 </template>
 
 <script>
-const user = JSON.parse(localStorage.target);
-const name = user._LABEL;
-const dob = user._DATE_OF_BIRTH;
-const status = user._Family[0]["burgelijke status"];
+let user = "";
+let name = "";
+let dob = "";
+let status = "";
+if(localStorage.target != null){
+ user = JSON.parse(localStorage.target);
+ name = user._LABEL;
+ dob = user._DATE_OF_BIRTH;
+ status = user._Family[0]["burgelijke status"];
+}
 
 export default {
   props: {

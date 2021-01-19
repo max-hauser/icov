@@ -18,9 +18,14 @@
 </template>
 
 <script>
-const user = JSON.parse(localStorage.target);
-const salaris = user._FINANCES[0]["jaarinkomen"];
-const schulden = user._FINANCES[1]["schuldGrootte"];
+  let user = "";
+  let salaris = "";
+  let schulden = "";
+if(localStorage.target != null){
+  user = JSON.parse(localStorage.target);
+  salaris = user._FINANCES[0]["jaarinkomen"];
+  schulden = user._FINANCES[1]["schuldGrootte"];
+}
 
 export default {
   name: 'HelloWorld',

@@ -17,8 +17,12 @@
 </template>
 
 <script>
-const user = JSON.parse(localStorage.target);
-const bezittingen = user._POSSESSIONS;
+let user = "";
+let bezittingen = "";
+if(localStorage.target != null){
+ user = JSON.parse(localStorage.target);
+ bezittingen = user._POSSESSIONS;
+}
 
 export default {
   name: 'HelloWorld',

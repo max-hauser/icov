@@ -30,17 +30,23 @@
             <td></td>
           </tr>  
         </table> 
-        
-                
+
+
     </div>
   </div>  
 </template>
 
 <script>
-const user = JSON.parse(localStorage.target);
-const target = user._LABEL;
-const kids = user._Family[0]["kinderen"];
-const partnerNaam = user._Family[0]["partner"]["naam"];
+let user = "";
+let target = "";
+let kids = "";
+let partnerNaam = "";
+if(localStorage.target != null){
+ user = JSON.parse(localStorage.target);
+ target = user._LABEL;
+ kids = user._Family[0]["kinderen"];
+ partnerNaam = user._Family[0]["partner"]["naam"];
+}
 
 export default {
   name: 'HelloWorld',

@@ -16,9 +16,14 @@
 </template>
 
 <script>
-const user = JSON.parse(localStorage.target);
-const kids = user._Family[0]["kinderen"];
-const partnerNaam = user._Family[0]["partner"]["naam"];
+let user = "";
+let kids = "";
+let partnerNaam = "";
+if(localStorage.target != null){
+   user = JSON.parse(localStorage.target);
+   kids = user._Family[0]["kinderen"];
+   partnerNaam = user._Family[0]["partner"]["naam"];
+}
 
 export default {
   name: 'HelloWorld',
