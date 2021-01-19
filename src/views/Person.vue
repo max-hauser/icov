@@ -70,7 +70,15 @@
         tabs.forEach((tab)=>{ tab.style.backgroundColor = "transparent";})
         }
       }
-    }  
+    },
+  mounted: function(){
+    if(localStorage.refresh == undefined){
+      if(location.href.includes("person")){
+        localStorage.setItem("refresh", "no");
+        location.reload();
+      }
+    }
+  }  
   }
 </script>
 

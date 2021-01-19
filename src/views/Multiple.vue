@@ -40,88 +40,30 @@
         </ul>
         </div>
         <Voorkeuren />
-        <Icon name="company-zero"/>
+        <Icon name="multiple"/>
       </section>
 
       <aside>
-        <Legenda />
+        <MultipleLegenda />
         <hr>
-        <Filter />
       </aside>
     </main>
-  </div>
+  </div>  
 </template>
 
 <script>
-// @ is an alias to /src
 import Icon from '@/components/Icon.vue'
-import Legenda from '@/components/CompanyLegenda.vue'
-import Filter from '@/components/CompanyFilter.vue'
-
-
-const maxAmount = 3;
-let current = 0;
+import MultipleLegenda from '@/components/MultipleLegenda.vue'
 
 export default {
-  name: 'Home',
   components: {
     Icon,
-    Legenda,
-    Filter,
+    MultipleLegenda,
   },
-  methods: {
-    steven: function() {
-      console.log('test');
-    },
-    showGereed: function() {
-      document.querySelector('.gereed').classList.toggle('hide');
-      const circles = document.querySelectorAll('circle');
-      circles.forEach((circle)=> {
-        circle.addEventListener('click', function(event){
-          if(current <= maxAmount){
-            current++;
-            if(current === 1){
-              document.querySelector('.jan').classList.remove('hide')
-              event.target.style.fill = "red";
-            }else if(current === 2){
-              document.querySelector('.pietje').classList.remove('hide')
-              event.target.style.fill = "red";
-            }else if(current === 3){
-              document.querySelector('.klaas').classList.remove('hide')
-              event.target.style.fill = "red";
-            }
-          }
-        })
-      })
-
-    },
-    changeVue: function() {
-      const ul = document.querySelector('.selectie').children;
-      let proceed = true;
-      ul.forEach((element)=>{
-        if(element.classList.contains('hide')){
-          proceed = false;
-        }
-      })
-      if(proceed == true){
-        console.log('go to other vue')
-        this.$router.push('/multiple');
-      }
-    }
-  },
-  mounted: function(){
-    if(localStorage.refresh_company == undefined){
-      if(location.href.includes("company")){
-        localStorage.setItem("refresh_company", "no");
-        location.reload();
-      }
-    }
-  }   
 }
 </script>
 
 <style scoped>
-
   .icons{
     width: 80%;
   }

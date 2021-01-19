@@ -8,6 +8,7 @@ import Company from '../views/Company.vue'
 import Steven from '../views/Steven.vue'
 import Auto from '../views/Auto.vue'
 import Voorkeuren from '../views/Voorkeuren.vue'
+import Multiple from '../views/Multiple.vue'
 
 const routes = [
   {
@@ -54,6 +55,11 @@ const routes = [
   path: '/voorkeuren',
   name: 'voorkeuren',
   component: Voorkeuren
+}, 
+{
+  path: '/multiple',
+  name: 'multiple',
+  component: Multiple
 }, 
   {
     path: '/about',
