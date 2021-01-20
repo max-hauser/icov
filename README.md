@@ -1,4 +1,10 @@
-# project
+# project iCOV
+
+## Over het project 
+Het huidige iCOV datavisualisatie-tool kan veel beter, het is welliswaar erg snel maar wel erg onoverzichtelijk. Aan ons is gevraagd of we dit konden verbeteren.
+## De data
+
+## Framework
 
 ## Project setup
 ```
