@@ -177,7 +177,6 @@ export default {
     list-style-type: none;
     margin: 0;
     padding: 10px;
-    border: 1px solid;
     text-align: left;
 } 
 

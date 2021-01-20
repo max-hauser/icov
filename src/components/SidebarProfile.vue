@@ -88,4 +88,8 @@ div#profile {
     align-items: start;
     padding-left: 5vh;
 }  
+
+#profile img {
+    width: auto;
+}
 </style>

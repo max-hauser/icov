@@ -10,3 +10,7 @@ canvas{
   left: 0;
   z-index: -1;
 }
+
+img.logout {
+    filter: invert(1);
+}
