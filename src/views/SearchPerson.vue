@@ -1,6 +1,6 @@
 <template>
 <div>
-    <router-link to="/"><img src="../assets/logout.png" alt="logout" class="logout"></router-link>
+    <router-link to="/"><img src="../assets/logout.png" alt="logout" class="logout" @click="logout"></router-link>
     <div class="home">
     <h1>Persoon zoeken</h1>
 
@@ -64,7 +64,12 @@ export default {
     information: function(event) {
       event.preventDefault();
       document.querySelector('.info').classList.toggle('hide');
-    }     
+    },
+    logout: function(event) {
+      event.preventDefault();
+      localStorage.clear();
+      this.$router.push("/");
+    }         
   }
 }
 </script>
@@ -112,7 +117,6 @@ img{
 }
 
 .logout{
-  background-color: #fff;
   padding: 10px 20px;
   border-radius: 10px;
   width: 25px;
@@ -120,6 +124,7 @@ img{
   top: 1vh;
   margin: 20px;
   position: absolute;
+  background: transparent;
 }
 
 form {

@@ -1,6 +1,6 @@
 <template>
 <div>
-    <router-link to="/"><img src="../assets/logout.png" alt="logout" class="logout"></router-link>
+    <router-link to="/"><img src="../assets/logout.png" alt="logout" class="logout" @click="logout"></router-link>
     <div class="home">
     <h1>Welke data zoek je?</h1>
 
@@ -31,6 +31,13 @@
 export default {
   name: 'Home',
   components: {
+  },
+  methods: {
+    logout: function(event) {
+      event.preventDefault();
+      localStorage.clear();
+      this.$router.push("/");
+    }
   }
 }
 </script>
@@ -82,7 +89,6 @@ img{
 }
 
 .logout{
-  background-color: #fff;
   padding: 10px 20px;
   border-radius: 10px;
   width: 25px;
@@ -90,5 +96,6 @@ img{
   top: 1vh;
   margin: 20px;
   position: absolute;
+  background: transparent;
 }
 </style>

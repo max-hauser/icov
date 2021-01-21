@@ -67,7 +67,7 @@ export default {
 <style scoped>
 
   .icons{
-    width: 40vw;
+    width: 80%;
   }
 
   .companyPage{

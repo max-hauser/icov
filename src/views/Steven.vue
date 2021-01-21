@@ -2,7 +2,7 @@
   <div class="companyPage">
     <main>
       <aside>
-        <a href="#">terug</a>
+        <a href="/company">terug</a>
 
         <h1>Bedrijfsgegevens</h1>
         <table>
@@ -67,7 +67,7 @@ export default {
 <style scoped>
 
   .icons{
-    width: 40vw;
+    width: 80%;
   }
 
  body .king path#Path_27 {
