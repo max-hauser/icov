@@ -1,6 +1,7 @@
 <template>
   <div class="personPage">
     <aside>
+      <a href="/choosetype" class="terug">Terug</a>
   <SidebarProfile />
    <a href="" v-on:click="select" class="selected">
      <h3>Relaties</h3>
@@ -21,10 +22,10 @@
     </aside>
 
     <main>
-      <section id="family" class="selectContent content"><h2>Family</h2><MainFamily /></section>
-      <section id="finance" class="content"><h2>Finance</h2><MainFinance /></section>
-      <section id="possessions" class="content"><h2>Possessions</h2><MainPossessions /></section>
-      <section id="locations" class="content"><h2>Locations</h2><MainMap /></section>
+      <section id="family" class="selectContent content"><h2>Familie</h2><MainFamily /></section>
+      <section id="finance" class="content"><h2>Financiën</h2><MainFinance /></section>
+      <section id="possessions" class="content"><h2>Bezittingen</h2><MainPossessions /></section>
+      <section id="locations" class="content"><h2>Locaties</h2><MainMap /></section>
     </main>
   </div>
 </template>
@@ -90,6 +91,12 @@
     display: flex;
   }
 
+  a.terug {
+    border: 1px solid #fff;
+    width: fit-content;
+    padding: 10px 20px;
+}
+
   aside{
     background-color: black;
     width: 30vw;
@@ -117,7 +124,7 @@
   }
 
   a.selected{
-    background-color: lightblue;
+    background-color: #95969A;
     position: relative;
   }
 
@@ -129,12 +136,12 @@
       width: 0;
       height: 0;
       border-top: 25px solid transparent;
-      border-left: 25px solid lightblue;
+      border-left: 25px solid #95969A;
       border-bottom: 25px solid transparent;
   }
 
   a:hover{
-    background-color: lightblue;
+    background-color: #95969A;
   }
 
   .content{

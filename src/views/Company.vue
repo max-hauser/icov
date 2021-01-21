@@ -2,7 +2,7 @@
   <div class="companyPage">
     <main>
       <aside>
-        <a href="#">terug</a>
+        <a href="/choosetype">terug</a>
 
         <h1>Bedrijfsgegevens</h1>
         <table>
@@ -33,7 +33,7 @@
         <div class="buttons">
         <button class="select" @click="showGereed">selecteer</button>
         <button class="gereed hide" @click="changeVue">gereed</button>
-        <ul class="selectie">
+        <ul class="selectie hide">
           <li class="jan hide">Jan</li>
           <li class="pietje hide">Pietje</li>
           <li class="klaas hide">Klaas</li>
@@ -74,6 +74,7 @@ export default {
       console.log('test');
     },
     showGereed: function() {
+      document.querySelector('.selectie').classList.toggle('hide');
       document.querySelector('.gereed').classList.toggle('hide');
       const circles = document.querySelectorAll('circle');
       circles.forEach((circle)=> {
@@ -137,6 +138,15 @@ export default {
 
   main{
     display: flex;
+  }
+
+  button.select,
+  button.gereed{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    margin-right: 5px;
   }
 
   aside{

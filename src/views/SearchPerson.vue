@@ -11,6 +11,11 @@
       <input type="text" name="query" id="query" placeholder="Naam / BSN-nummer" autofocus>
       <input type="submit" value="Zoeken" name="login" id="submit" @click="getdata">   
     </form>   
+
+      <div class="information">
+        <strong class="infoBtn" @click="information">i</strong>
+        <p class="info hide">Probeer: King</p>
+      </div>    
     </section>
   </div>
   </div>
@@ -55,7 +60,11 @@ export default {
             searchbar.autofocus = true;
           }, 1000)
         }      
-    }
+    },
+    information: function(event) {
+      event.preventDefault();
+      document.querySelector('.info').classList.toggle('hide');
+    }     
   }
 }
 </script>
@@ -143,5 +152,36 @@ section{
   display: flex;
   flex-direction: column;
   text-align: left;
+}
+
+.hide{
+  visibility: hidden;
+}
+
+.information{
+  display: flex;
+  justify-content: left;
+  align-items: center;  
+}
+
+.information strong{
+  background-color: #000;
+  padding: 10px;
+  border-radius: 100%;
+  color:#fff;
+  text-align: center;
+  height: 10px;
+  width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.information strong:hover{
+  cursor: pointer;
+}
+
+.info{
+  margin-left: 25px;
 }
 </style>

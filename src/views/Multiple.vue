@@ -30,15 +30,6 @@
       </aside>
 
       <section>
-        <div class="buttons">
-        <button class="select" @click="showGereed">selecteer</button>
-        <button class="gereed hide" @click="changeVue">gereed</button>
-        <ul class="selectie">
-          <li class="jan hide">Jan</li>
-          <li class="pietje hide">Pietje</li>
-          <li class="klaas hide">Klaas</li>
-        </ul>
-        </div>
         <Voorkeuren />
         <Icon name="multiple"/>
       </section>

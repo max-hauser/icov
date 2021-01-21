@@ -77,8 +77,12 @@ if(localStorage.target != null){
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    padding: 15px;
   }
+
+  .possessions ol li:nth-child(3) {
+    padding-right: 75px;
+}
 
   li p {
       margin: 0;

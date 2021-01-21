@@ -327,18 +327,20 @@
       <circle
         id="Ellipse_197"
         data-name="Ellipse 197"
-        class="cls-3"
+        class="cls-3 family"
         cx="381.32"
         cy="302.32"
         r="17.61"
+        @click="family"
       />
       <circle
         id="Ellipse_198"
         data-name="Ellipse 198"
-        class="cls-3"
+        class="cls-3 family"
         cx="541.42"
         cy="509.82"
         r="17.61"
+        @click="family"
       />
       <circle
         id="Ellipse_199"
@@ -480,7 +482,8 @@
         <path
           id="Path_23"
           data-name="Path 23"
-          class="cls-3"
+          class="cls-3 family"
+          @click="family"
           d="M388.61,572.48a1.71,1.71,0,0,0-.1-2.41l0,0-15.94-13.95a2,2,0,0,0-2.6,0l-16,14.67a1.68,1.68,0,0,0-.12,2.39h0l0,0,.4.42a1.74,1.74,0,0,0,2.4.18l1.2-1.07v15.68a1.74,1.74,0,0,0,1.74,1.74h6.24a1.74,1.74,0,0,0,1.74-1.74v-11h7.95v11a1.64,1.64,0,0,0,1.55,1.73h6.69a1.75,1.75,0,0,0,1.75-1.73h0V573l.73.64c.41.36,1.26.07,1.91-.64Z"
         />
       </g>
@@ -722,7 +725,8 @@
           <ellipse
             id="Ellipse_268"
             data-name="Ellipse 268"
-            class="cls-11"
+            class="cls-11 hover"
+            @click="steven"
             cx="288.78"
             cy="426.64"
             rx="19.83"
@@ -852,6 +856,9 @@ export default {
     },
     car: function() {
       this.$router.push("/auto");
+    },
+    family: function() {
+      this.$router.push("/person");
     }
   }
 };
@@ -1050,6 +1057,10 @@ svg #Group_90 path#Path_27.cls-3:hover{
   cursor: pointer;
 }
 
+.hover:hover{
+  cursor: pointer;
+}
+
 
 
 .multiple .cls-1 {
@@ -1104,5 +1115,10 @@ svg #Group_90 path#Path_27.cls-3:hover{
 
 .multiple .cls-12 {
     fill: #845fa9;
+}
+
+.family:hover{
+  cursor: pointer;
+  fill: #EE5454;
 }
 </style>

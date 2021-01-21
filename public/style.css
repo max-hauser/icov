@@ -14,3 +14,7 @@ canvas{
 img.logout {
     filter: invert(1);
 }
+
+h2{
+  color: #000;
+}

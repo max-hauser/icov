@@ -7,6 +7,7 @@
                 <div>
                   <img src="../assets/user.png" alt="partner">
                   {{targetPerson}} 
+                  <a href="/steven" class="steven">bekijk</a>
                 </div>               
               </td>
               <td>
@@ -117,4 +118,19 @@ tr td:first-child{
 tr:nth-child(3) td{
     padding: 5vh;
 }  
+
+.steven{
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 5px 20px;
+  margin: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.steven:hover{
+  background-color: #000;
+  color: #fff;
+}
 </style>

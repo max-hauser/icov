@@ -9,6 +9,11 @@
       <input type="password" name="password" id="password" placeholder="password">
 
       <input type="submit" value="Login" name="login" id="submit" @click="getFormData">
+
+      <div class="information">
+        <strong class="infoBtn" @click="information">i</strong>
+        <p class="info hide">username: admin password: icov123</p>
+      </div>
             
     </form>
   </div>
@@ -27,7 +32,7 @@ export default {
       const username = document.querySelector("#username").value;
       const password = document.querySelector("#password").value;
       localStorage.setItem('username', 'admin');
-      localStorage.setItem('password', 'admin123');
+      localStorage.setItem('password', 'icov123');
       localStorage.setItem('loggedin', false);
 
       if(username === localStorage.username && password === localStorage.password) {
@@ -36,6 +41,10 @@ export default {
       }else{
         localStorage.loggedin = false;
       }
+    },
+    information: function(event) {
+      event.preventDefault();
+      document.querySelector('.info').classList.toggle('hide');
     }      
   }
 }
@@ -86,6 +95,37 @@ form input[type="submit"]{
   border-radius: 3px;
   color: #fff;
   padding: 10px 20px;
+}
+
+.hide{
+  visibility: hidden;
+}
+
+.information{
+  display: flex;
+  justify-content: left;
+  align-items: center;  
+}
+
+.information strong{
+  background-color: #000;
+  padding: 10px;
+  border-radius: 100%;
+  color:#fff;
+  text-align: center;
+  height: 10px;
+  width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.information strong:hover{
+  cursor: pointer;
+}
+
+.info{
+  margin-left: 25px;
 }
 
 </style>

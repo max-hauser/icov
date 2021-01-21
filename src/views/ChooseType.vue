@@ -61,8 +61,12 @@ export default {
 
 .home a img{
   object-fit: cover;
-  height: 100px;
+  height: auto;
   width: 100px;
+}
+
+a:nth-child(2) p {
+    margin-top: 40px;
 }
 
 .home a:first-child img{

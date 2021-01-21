@@ -9,7 +9,7 @@
       </div>
 
       <ul>
-        <li>Salaris</li>
+        <li class="title">Salaris</li>
       </ul>
 
       <input type="range" list="tickmarks" v-model="salary" disabled min="0" step="100" max="5000">
@@ -89,6 +89,10 @@ input[type=range] {
     width: 50vw;
     max-width: 100%;
     margin-left: 0;
+}
+
+.title{
+  color: #000;
 }
 
 /* style datalist */
